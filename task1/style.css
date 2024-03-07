@@ -16,7 +16,7 @@ html,body{
     width: 100%;
     min-height: 60vh;
     /* background-color: aqua; */
-    background-image: url('https://cdn.britannica.com/50/213250-050-02322AA8/Nike-logo.jpg');
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/48288d67532563.5b3fdc45d2733.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -53,6 +53,9 @@ html,body{
     align-items: center;
     justify-content: space-between;
 }
+.icon{
+    font-size: 1rem;
+}
 
 .bottom{
     display: flex;
@@ -62,13 +65,15 @@ html,body{
 .b1{
  width:30%;
  min-height:inherit;
- background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/f0a14417430469.562b9e470f11e.jpg');
+ background-image: url('https://img.freepik.com/premium-photo/shoe-that-is-made-by-nike_148840-1795.jpg');
  background-size: cover;
  background-position: center;
 }
 .b1 h1{
     text-align: center;
-    padding: 30px;
+    padding-top: 79px;
+    font-size: 70px;
+    color: rgb(255 166 0 / 98%);
 }
 .b1 p{
     text-align: center;
@@ -84,13 +89,14 @@ html,body{
 .b2 .up{
     width: 100%;
     min-height: 20vh;
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/188/992/952/advertising-justice-logo-logos-wallpaper-preview.jpg');
+    background-image: url('michael.jpg');
     background-size: cover;
     background-position: center;
 }
 .b2 .up h1{
     text-align: center;
     padding:0 30px;
+    color: #808080bd;
 }
 .b2 .up p{
     text-align: center;
@@ -100,7 +106,7 @@ html,body{
 .b2 .down{
     width: 100%;
     min-height: 20vh;
-    background-image: url('https://cdna.artstation.com/p/assets/images/images/055/667/294/large/vishal-verma-nike-ui-design.jpg?1667477502');
+    background-image: url('nike3.png');
     background-size: cover;
     background-position: center;
 }
@@ -109,7 +115,11 @@ html,body{
     width: 100%;
     min-height: 20vh;
     background-color: rgba(212, 58, 15, 0.224);
-    color: white;
+    color:rgba(249, 64, 64, 0.947);
+}
+.b2 .down .overlay h1{
+padding: 10px;
+
 }
 .b3{
    width:40%;
@@ -125,11 +135,27 @@ html,body{
     width: 50%;
     height: 100%;
     padding: 4vw 3vh;
+    
 }
 .b3 .overlay p{
 padding: 1vh;
-color: #C5D42B;
+margin: 0.3vh;
+color: rgb(255 93 158 / 95%);;
 font-size: 1.2rem;
 font-weight: 600;
+background-color: #ffc0cb91;
 
+border-radius: 50px;
+/* glass touch */
+background: linear-gradient(
+    90deg,
+    rgba(251, 131, 131, 0.1) 0%,
+    rgba(254, 81, 150, 0.1) 100%
+  );
+  background-blend-mode:  screen;
+  box-shadow:
+    inset 0px 5px 5px 0px rgba(255, 255, 255, 0.1),
+    inset 0px -5px 5px 0px rgba(254, 81, 150, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
