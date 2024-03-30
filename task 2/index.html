@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <img src="celebration.gif" alt="#"> -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <label for="task">Task :</label>
+        <input type="text" id="taskInput" placeholder="Add new task">
+        <label for="priority">Select Priority :</label>
+        
+        <select name="priority" id="priority" required>
+            <option value="low">Low</option>
+            <option value="high">High</option>
+            <option value="urgent">Urgent</option>
+        </select>
+        <br>
+        <!-- <input type="text" id="taskPriority" placeholder="Priority"> -->
+        <label for="deadline">Deadline :</label>
+        <input type="date" id="taskDeadline" placeholder="Deadline">
+        <button class="addTaskBtn" onclick="addtask()" >Add Task</button>
+        <!-- <ul id="taskList"></ul> -->
+
+    </div>
+    
+    <div class="container2">
+        
+
+        <table class="table w-full">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Priority</th>
+                    <!-- <th>Action</th> -->
+                </tr>
+            </thead>
+        </table>
+        <div class="task" >
+
+            
+
+            <ul id="list-container-1">
+                <!--<li class="checked">Task 1</li>
+                <li>Task 1</li>
+                <li>Task 1</li>-->
+            </ul>
+            <ul id="list-container-2">
+
+                <!--<li class="checked">Task 1</li>
+                <li>Task 1</li>
+                <li>Task 1</li>-->
+            </ul>
+            <ul id="list-container-3">
+                <!--<li class="checked">Task 1</li>
+                <li>Task 1</li>
+                <li>Task 1</li>-->
+            </ul>
+            
+        </div>
+        <button onclick="deleteAllTask()" class="danger">Delete all</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
